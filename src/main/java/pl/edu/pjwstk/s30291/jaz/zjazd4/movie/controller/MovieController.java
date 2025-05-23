@@ -51,4 +51,11 @@ public class MovieController {
 		
 		return ResponseEntity.noContent().build();
 	}
+	
+	@PostMapping("/{id}/available")
+	public ResponseEntity<Movie> setAvailability(@PathVariable UUID id) {
+		service.setAvailability(id, true);
+		
+		return ResponseEntity.ok().build();
+	}
 }

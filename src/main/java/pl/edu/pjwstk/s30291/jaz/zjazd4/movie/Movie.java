@@ -37,4 +37,7 @@ public class Movie {
 	
 	@Setter 
 	private String author;
+	
+	@Setter
+	private boolean available;
 }

@@ -20,7 +20,7 @@ public class MovieService {
 	}
 	
 	public List<Movie> getAll() {
-		return repository.findAll();
+		return repository.findAllByOrderByTitleAsc();
 	}
 	
 	public Optional<Movie> getById(UUID id) {
@@ -45,6 +45,18 @@ public class MovieService {
 		if(!exists(id)) throw new MovieNotFoundException(id);
 		
 		repository.deleteById(id);
+	}
+	
+	public void setAvailability(UUID id, boolean value) {
+		Optional<Movie> movieOpt = getById(id);
+		
+		if(!movieOpt.isPresent()) throw new MovieNotFoundException(id);
+		
+		Movie movie = movieOpt.get();
+		
+		movie.setAvailable(value);
+		
+		repository.save(movie);
 	}
 	
 	public boolean exists(UUID id) {
