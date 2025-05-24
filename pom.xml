@@ -9,8 +9,8 @@
 		<version>3.4.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>pl.edu.pjwstk.s30291.jaz</groupId>
-	<artifactId>zjazd4</artifactId>
+	<groupId>pl.edu.pjwstk.s30291.projects.svc</groupId>
+	<artifactId>movie</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>zjazd4</name>
 	<description>Zjazd4 JAZ</description>

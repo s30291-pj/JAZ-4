@@ -1,4 +1,4 @@
-package pl.edu.pjwstk.s30291.jaz.zjazd4.movie;
+package pl.edu.pjwstk.s30291.projects.svc.movie;
 
 import java.time.LocalDate;
 import java.util.UUID;

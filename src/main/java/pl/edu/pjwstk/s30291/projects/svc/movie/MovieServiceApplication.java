@@ -1,13 +1,13 @@
-package pl.edu.pjwstk.s30291.jaz.zjazd4;
+package pl.edu.pjwstk.s30291.projects.svc.movie;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Zjazd4Application {
+public class MovieServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Zjazd4Application.class, args);
+		SpringApplication.run(MovieServiceApplication.class, args);
 	}
 
 }

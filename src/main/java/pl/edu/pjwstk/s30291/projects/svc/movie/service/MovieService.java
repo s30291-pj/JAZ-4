@@ -1,4 +1,4 @@
-package pl.edu.pjwstk.s30291.jaz.zjazd4.movie.service;
+package pl.edu.pjwstk.s30291.projects.svc.movie.service;
 
 import java.util.List;
 import java.util.Optional;
@@ -6,10 +6,9 @@ import java.util.UUID;
 
 import org.springframework.stereotype.Service;
 
-import pl.edu.pjwstk.s30291.jaz.zjazd4.movie.Movie;
-import pl.edu.pjwstk.s30291.jaz.zjazd4.movie.exception.MovieNotFoundException;
-import pl.edu.pjwstk.s30291.jaz.zjazd4.movie.exception.MovieNotFoundException;
-import pl.edu.pjwstk.s30291.jaz.zjazd4.movie.repository.MovieRepository;
+import pl.edu.pjwstk.s30291.projects.svc.movie.Movie;
+import pl.edu.pjwstk.s30291.projects.svc.movie.exception.MovieNotFoundException;
+import pl.edu.pjwstk.s30291.projects.svc.movie.repository.MovieRepository;
 
 @Service
 public class MovieService {

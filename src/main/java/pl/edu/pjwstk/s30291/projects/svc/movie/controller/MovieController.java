@@ -1,4 +1,4 @@
-package pl.edu.pjwstk.s30291.jaz.zjazd4.movie.controller;
+package pl.edu.pjwstk.s30291.projects.svc.movie.controller;
 
 import java.util.List;
 import java.util.UUID;
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import pl.edu.pjwstk.s30291.jaz.zjazd4.movie.Movie;
-import pl.edu.pjwstk.s30291.jaz.zjazd4.movie.service.MovieService;
+import pl.edu.pjwstk.s30291.projects.svc.movie.Movie;
+import pl.edu.pjwstk.s30291.projects.svc.movie.service.MovieService;
 
 @RestController
 @RequestMapping("/movies")
@@ -52,9 +52,9 @@ public class MovieController {
 		return ResponseEntity.noContent().build();
 	}
 	
-	@PostMapping("/{id}/available")
-	public ResponseEntity<Movie> setAvailability(@PathVariable UUID id) {
-		service.setAvailability(id, true);
+	@PostMapping("/{id}/availability")
+	public ResponseEntity<Movie> setAvailability(@PathVariable UUID id, @RequestBody boolean value) {
+		service.setAvailability(id, value);
 		
 		return ResponseEntity.ok().build();
 	}

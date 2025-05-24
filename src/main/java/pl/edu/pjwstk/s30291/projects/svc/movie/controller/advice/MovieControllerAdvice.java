@@ -1,11 +1,11 @@
-package pl.edu.pjwstk.s30291.jaz.zjazd4.movie.controller.advice;
+package pl.edu.pjwstk.s30291.projects.svc.movie.controller.advice;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import pl.edu.pjwstk.s30291.jaz.zjazd4.movie.exception.MovieNotFoundException;
+import pl.edu.pjwstk.s30291.projects.svc.movie.exception.MovieNotFoundException;
 
 @RestControllerAdvice
 public class MovieControllerAdvice {
